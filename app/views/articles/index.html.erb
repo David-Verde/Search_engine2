@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Articles</h1>
+
+
 
 <%= form_with(url: articles_path, method: :get, data: {
   controller: "search-form", turbo_frame: "articles", turbo_action: "advance"}) do |form| %>
@@ -12,14 +13,18 @@
 
     </div>
   <% end %>
+  <div>
+<%= link_to "Show trending topics", searches_path %>
+</div>
+  <h1>List of Articles</h1>
 <div>
 <%= render "articles", articles: @articles %>
 
 </div>
 
-
-
 <%= link_to "New article", new_article_path %>
+
+
 
 
 

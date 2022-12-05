@@ -1,6 +1,23 @@
 <div id="searches">
-  <h1> Most Searches </h1>
-  <ul id="searches-list">
-    <%= render partial: 'search', locals: { searches: @grouped_searches } %>
-  </ul>
+  <h1> Trending Topics </h1>
+
+</div>
+<h1> Total number of searches:  <%= @total_searches %></h1>
+<div id="group_search">
+<h2>Searches Percentage</h2>
+<% @groups.each do |group| %>
+  <div id="group">
+  
+    <h3> <%= group[0] %> <%= (group[1]*100)/@total_searches %> %</h3>
+    
+  </div>
+<% end %>
+
+
+
+</div>
+
+
+<div>
+  <%= link_to "Go to Search Bar", articles_path %>
 </div>
