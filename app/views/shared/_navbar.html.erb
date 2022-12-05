@@ -5,5 +5,9 @@
    <p> Welcome </p>
     <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => 'link_button' %>
   </div>
+    <% else %>
+    <div class="navbar_container">
+      <%= link_to "Sign up", new_user_registration_path, :class => 'link_button' %>
+      <%= link_to "Log in", new_user_session_path, :class => 'link_button' %>
   <% end %>
 </nav>
