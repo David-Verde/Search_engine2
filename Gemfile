@@ -1,10 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
+gem 'ffi', '~> 1.9', '>= 1.9.10'
 ruby "3.1.2"
 gem "devise"
 gem "rspec"
 gem 'rspec-rails'
+gem 'rexml'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 

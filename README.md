@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/David-Verde/Budget-App">
+  <a href="https://github.com/David-Verde/Search_engine2">
  
 
   <h3 align="center">Ruby on Rails --> [Budget-App]</h3>
@@ -10,12 +10,12 @@
   <p align="center">
     This project is part of the Microverse curriculum Capstone Project in Ruby on rails module!
     <br />
-    <a href="https://github.com/David-Verde/Budget-App"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/David-Verde/Search_engine2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/David-Verde/Recipe-App/Budget-App">Report Bug</a>
+    <a href="https://github.com/David-Verde/Search_engine2/issues">Report Bug</a>
     ·
-    <a href="https://github.com/David-Verde/Recipe-App/Budget-App">Request Feature</a>
+    <a href="https://github.com/David-Verde/Search_engine2/issues">Request Feature</a>
   </p>
 </p>
 
@@ -32,16 +32,15 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Project to create the first configuration of ruby on rails
+Project to create a Search engine using Ruby on rails
 
-## Video Explanation
-https://www.loom.com/share/18271cf949f34ea58e85f124fc50449e
+
 
 ### Live Version
-https://nameless-escarpment-50776.herokuapp.com/categories
+
 
 ###
- <a href="https://github.com/David-Verde/Budget-App">
+ <a href="https://github.com/David-Verde/Search_engine2">
     
   </a>
 
@@ -66,7 +65,7 @@ git@github.com:David-Verde/Budget-App.git
   ```
   - Clone with HTTPS
   ```
-https://github.com/David-Verde/Budget-App.git
+https://github.com/David-Verde/Search_engine2.git
   ```
 
 * In the project directory, you can run:
@@ -85,9 +84,6 @@ https://github.com/David-Verde/Budget-App.git
 Give a :star: if you like this project!
 
 
-## Acknowledgements
-Gregoire Vella on Behance 
-Thanks for let me use the Template
 
 Authors
 👤 **David Verde Alvarez**
@@ -95,5 +91,5 @@ Authors
 - This is My **Twitter**: [![@Unyielding1](https://img.shields.io/twitter/follow/omarramoun?label=David16&style=social)](https://twitter.com/UnyieldingOne)
 )
 
-This project is [MIT](https://github.com/David-Verde/Budget-App/blob/develop/LICENSE) licensed.
+
 
