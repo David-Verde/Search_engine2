@@ -1,12 +1,5 @@
-<div id="<%= dom_id search %>">
-  <p>
-    <strong>User:</strong>
-    <%= search.user_id %>
-  </p>
+<% searches.each do |search, count| %>
 
-  <p>
-    <strong>Query:</strong>
-    <%= search.query %>
-  </p>
+<li style="font-size: <%= 25 + count %>px"><%= search %></li>
 
-</div>
+<% end %>

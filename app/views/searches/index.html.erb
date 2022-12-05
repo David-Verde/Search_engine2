@@ -1,14 +1,6 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Searches</h1>
-
 <div id="searches">
-  <% @searches.each do |search| %>
-    <%= render search %>
-    <p>
-      <%= link_to "Show this search", search %>
-    </p>
-  <% end %>
+  <h1> Most Searches </h1>
+  <ul id="searches-list">
+    <%= render partial: 'search', locals: { searches: @grouped_searches } %>
+  </ul>
 </div>
-
-<%= link_to "New search", new_search_path %>

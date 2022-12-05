@@ -5,8 +5,7 @@ class ArticlesController < ApplicationController
   def index
     if params[:query].present?
       @articles = Article.where("title LIKE ?", "%#{params[:query]}%")
-      @user = current_user
-      #save_search(params[:query], user_id)
+      Search.create(query: params[:query], user_id: current_user.id)
       
       
     else
