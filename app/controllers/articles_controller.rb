@@ -1,26 +1,39 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: %i[ show edit update destroy ]
+  before_action :check_user_id, only: %i[:search]
 
   # GET /articles or /articles.json
   def index
     if params[:query].present?
       @articles = Article.where("title LIKE ?", "%#{params[:query]}%")
+      @user = current_user
+      #save_search(params[:query], user_id)
+      
+      
     else
-      @articles = Article.all
+      
+      @articles = Article.all 
     end
+
+   if turbo_frame_request?
+      render partial: "articles", locals: { articles: @articles}
+   else
+    render :index
+   end
+
+ 
+
+   def save_search(query, user_id)
+    return if query.nil? || query.length < 3
+
+    new_search = Search.new(query: query, user_id: user_id)
+    #new_search.user_id = user_id
+    #user_search.query = Search.where(user_id: user_id).all.map(&:query)
+   end
+  
+  
+  
+  
+  
   end
   
- 
-
-  
-
- 
-
-
-
-    
-
-
-
-    
   end
