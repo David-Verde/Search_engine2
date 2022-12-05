@@ -8,11 +8,13 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+    redirect_to root_path unless current_user == @user
   end
 
   # GET /users/new
   def new
     @user = User.new
+    
   end
 
   # GET /users/1/edit
@@ -65,6 +67,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :password)
+      params.require(:user).permit(:email, :password)
     end
 end

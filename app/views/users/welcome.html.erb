@@ -1,0 +1,7 @@
+<h1 class="welcome-text"> Welcome to Search Engine </h1>
+<div class= "welcome">
+<%= link_to "Sign up", new_user_registration_path %>
+<%= link_to "Log in", new_user_session_path %>
+<%= button_to "Log-out", destroy_user_session_path, method: :delete, class: "logout-button" %>
+
+</div>
