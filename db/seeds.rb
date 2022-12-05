@@ -24,3 +24,5 @@ Article.create(title: "What is the best way to learn React?", content: "This is 
 Article.create(title: "What is the best way to learn JavaScript?", content: "This is the eighth article")
 
 Article.create(title: "What is the best way to learn HTML?", content: "This is the ninth article")
+
+Article.create(title: "What is the best way to learn CSS?", content: "This is the tenth article")
