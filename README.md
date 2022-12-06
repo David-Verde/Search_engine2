@@ -33,11 +33,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Project to create a Search engine using Ruby on rails
+you can create an acount to access, and them you can seach for the actual information on the database, the users search is going to be saved in the database in the "query" collumn, and the user con go to "trending topics" to check to percentaje of search by each sentence search. the turbo search time out for save was put on 2,5segs to give the user oportunity of put the complete sentence before the turbo search works.
 
 
 
 ### Live Version
-
+https://searh-engine.onrender.com
 
 ###
  <a href="https://github.com/David-Verde/Search_engine2">
@@ -71,6 +72,8 @@ https://github.com/David-Verde/Search_engine2.git
 * In the project directory, you can run:
 
   - `$ bundle install` - installs all the dependencies required by the project
+      Run 'rails db:create' to create the database
+      Run 'rails db:seed' to fill the database
 
   Run Rails s command to run Ruby on Rails console
 

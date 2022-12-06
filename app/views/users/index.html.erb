@@ -5,10 +5,14 @@
 <div id="users">
   <% @users.each do |user| %>
     <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+  
   <% end %>
 </div>
 
-<%= link_to "New user", new_user_path %>
+  <p>
+    <%= link_to "Go to Search Bar", articles_path %>
+    </p>
+
+
+
+
