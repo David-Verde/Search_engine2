@@ -5,7 +5,7 @@
   <a href="https://github.com/David-Verde/Search_engine2">
  
 
-  <h3 align="center">Ruby on Rails --> [Budget-App]</h3>
+  <h3 align="center">Ruby on Rails --> [Search Engine]</h3>
 
   <p align="center">
     This project is part of the Microverse curriculum Capstone Project in Ruby on rails module!
