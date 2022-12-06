@@ -3,13 +3,9 @@ before_action :check_session, only: %i[:search]
   # GET /articles or /articles.json
   def index
     if params[:query].present?
-      @articles = Article.where("title LIKE ?", "%#{params[:query]}%")
-      Search.create(query: params[:query], user_id: current_user.id)
-      
-   
-      
-      
-    else
+      @articles = Article.where("lower(content) LIKE ?", "%#{params[:query].downcase}%")
+      Search.create(query: params[:query], user_id: current_user.id.to_s) if @articles.any? && current_user 
+      else
       
       @articles = Article.all 
     end

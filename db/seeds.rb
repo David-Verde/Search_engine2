@@ -26,3 +26,17 @@ Article.create(title: "What is the best way to learn JavaScript?", content: "Thi
 Article.create(title: "What is the best way to learn HTML?", content: "This is the ninth article")
 
 Article.create(title: "What is the best way to learn CSS?", content: "This is the tenth article")
+
+Article.create(title: "What is the best way to learn Python?", content: "This is the eleventh article")
+
+Article.create(title: "have you ever been on barbados?", content: "This is the twelfth article")
+
+Article.create(title: "How do you open a new vs folder", content: "This is the thirteenth article")
+
+Article.create(title: "How do you run migration files", content: "This is the fourteenth article")
+
+Article.create(title: "How do you run seeds.rb", content: "This is the fifteenth article")
+
+Article.create(title: "How do you run rails server", content: "This is the sixteenth article")
+
+Article.create(title: "How do you run rails console", content: "This is the seventeenth article")
